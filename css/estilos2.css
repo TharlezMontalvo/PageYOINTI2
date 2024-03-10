@@ -1421,6 +1421,7 @@ form .btnsub input{
     height: 30px;
     padding: 0;
     cursor: pointer;
+    margin-left: 70px;
 }
 
 form .btnsub:hover input{
