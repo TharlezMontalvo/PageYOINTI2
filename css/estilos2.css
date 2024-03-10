@@ -1149,7 +1149,7 @@ body{
     border-radius: 20px;
 }
 
-.footer-1 .g1 .red-social a{
+/*.footer-1 .g1 .red-social a{
     display: inline-block;
     text-decoration: none;
     width: 45px;
@@ -1161,8 +1161,15 @@ body{
     text-align: center;
     transition: all 300ms ease;
     border-radius: 7px;
+}*/
+.footer-1 .g1 .red-social{
+    text-align: center;
+    margin-top: 30px;
 }
-
+.footer-1 .g1 .red-social h2{
+    color: #000000;
+    margin: 10px 0;
+}
 
 .footer-2{
     background-color: #076595;
@@ -1187,9 +1194,6 @@ body{
         margin-top: 250px;
     }
 }
-
-
-
 /*----------------------------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------------------*/
