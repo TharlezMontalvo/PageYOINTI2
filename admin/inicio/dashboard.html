@@ -25,7 +25,7 @@
         <div class="caja cajanav">
             
               <!-- Topbar -->
-              <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+              <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow navadd">
                 <!-- Logo Navbar-->
                 <div class="logo-div1">
                     <div class="logo-div2">
@@ -125,8 +125,8 @@
             <img class="logonegro" src="../../img/logoblack.png" alt="">
         </div>
         <div class="title-text">
-            <h1><b>Nombre Organización</b></h1>
-            <h3>Configuración de la Web</h3>
+            <h5 class="text-size"><b>Nombre Organización</b></h5>
+            <h8 class="text-size2">Configuración de la Web</h8>
         </div> 
     </div>
     <div class="body-dashboard">
@@ -136,7 +136,7 @@
                     <thead class="thead">
                         <tr>
                             <th colspan="3"><i class="fas fa-users icon"></i>Miembros de Equipos</th>
-                            <th><a href="#" class="btn-table"><i class="fas fa-user-plus"></i></a></th>
+                            <th><a href="#" class="btn-table plus"><i class="fas fa-user-plus"></i></a></th>
                         </tr>
                     </thead>
                     
@@ -192,7 +192,7 @@
                 <div class="manual-container">
                    <div class="manual-cont">
                     <div class="manual-msj">
-                      <h4><strong>Ver Manual de Usuario</strong></h4>
+                      <h4 class="manual-msj-size"><strong>Ver Manual de Usuario</strong></h4>
                     </div>
                     <div class="manual-icon">
                       <div class="circle-icon">
@@ -224,7 +224,51 @@
             </section>
         </div>
         <div class="right-side">
-
+            <div class="estadisticas">
+                <div class="estadistica-title">
+                    <h3 class="estadistica-size"><i class="fas fa-chart-bar icon"></i>Estadísticas</h3>
+                </div>
+                <div class="container">
+                    <div class="left-estadistica">
+                        <div class="stadistics-row">
+                            <h4>Número de visitantes</h4>
+                            <p>Selecciona:</p>
+                            <div class="dropdown-btn" onclick="toggleDropdown('dropdown1')">
+                                <a href="#" class="dropdown-item">Días</a>
+                                <span class="dropdown-icon">&#9660;</span>
+                                <!-- Contenido desplegable -->
+                                <div class="dropdown-content" id="dropdown1_content">
+                                    <a href="#" class="dropdown-item">Semanas</a>
+                                    <a href="#" class="dropdown-item">Meses</a>
+                                    <a href="#" class="dropdown-item">Años</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stadistics-row">
+                            <h4>Número de interacciones</h4>
+                            <p>Selecciona:</p>
+                            <div class="dropdown-btn" onclick="toggleDropdown('dropdown2')">
+                                <a href="#" class="dropdown-item">Días</a>
+                                <span class="dropdown-icon">&#9660;</span>
+                                <!-- Contenido desplegable -->
+                                <div class="dropdown-content" id="dropdown2_content">
+                                    <a href="#" class="dropdown-item">Semanas</a>
+                                    <a href="#" class="dropdown-item">Meses</a>
+                                    <a href="#" class="dropdown-item">Años</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-estadistica">
+                        <div class="graphics">
+                            <img src="../img/estadisticas.jpg" alt="graphic" class="img-graphic">
+                        </div>
+                        <div class="graphics">
+                            <img src="../img/estadisticas.jpg" alt="graphic" class="img-graphic">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!--  <div class="c2">
@@ -244,8 +288,7 @@
                 </div>
             </div>
         </section>-->
-        <br>
-        
+            
             <!-- <div class="divisor">
             </div>-->
 
@@ -305,7 +348,7 @@
         </section>-->
       
 
-    </div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -314,6 +357,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+           function toggleDropdown(dropdownId) {
+        var dropdownBtn = document.getElementById(dropdownId);
+        dropdownBtn.classList.toggle('active');
+    }
+    </script>
     </body>
 </html>
 

@@ -23,6 +23,9 @@
     text-decoration: none; 
     color: black; 
 }
+.nav-menu-link:hover {
+    color: white;
+}
 .nav-list{
     margin-left: 200px;
     margin-top: 10px;
@@ -30,12 +33,6 @@
 }
 .cabecera{
     display: block;
-}
-
-body{
-    font-family: 'Mulish',sans-serif;
-    font-weight: 300;
-    color: var(--primary);
 }
 
 .select-menu{
@@ -76,7 +73,6 @@ a:hover{
     background: #2c2c2c;
     color:#fffefa;
 }
-
 
 #sidebar-container{
     min-height: 100vh;
@@ -119,6 +115,12 @@ a:hover{
 }
 
 /*------------------ CSS-GRID ---------------------*/
+
+.body{
+    font-family: 'Mulish',sans-serif;
+    font-weight: 300;
+    color: var(--primary);
+}
 .grid-layout{
     display: grid;
     grid-template-columns:  18% auto;
@@ -136,7 +138,9 @@ a:hover{
     height: 6vh;
     background-color:  #1E6B93;
 }
-
+.navadd{
+    height: 60px;
+}
 .ccont{
     grid-template-columns: auto;
     grid-template-rows: auto;
@@ -338,8 +342,8 @@ a:hover{
     background-color: rgb(108, 177, 30);
 }
 .logo-div1{
-    width: 90px;
-    height: 90px;
+    width: 50px;
+    height: 50px;
     border-radius: 100px;
     background-color: #ffffff;
     display: flex;
@@ -348,8 +352,8 @@ a:hover{
     margin-left: 50px;
 }
 .logo-div2{
-    width: 65px;
-    height: 65px;
+    width: 30px;
+    height: 30px;
     border-radius: 100px;
     background-color: #1E6B93;
     display: flex;
@@ -358,8 +362,8 @@ a:hover{
 }
 
 .logonegro{
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
 }
 .caja1{
     width: 100%;
@@ -389,12 +393,12 @@ a:hover{
 
 /***************************************Titulo debajo del nav**********************/
 .title-body{
-    margin-top: 100px;
+    margin-top: 35px;
     display: flex; 
 }
 .title-logo{
-    width: 90px;
-    height: 90px;
+    width: 50px;
+    height: 50px;
     border-radius: 100px;
     background-color: gray;
     display: flex;
@@ -404,12 +408,21 @@ a:hover{
 }
 
 .title-text{
-    margin-left: 50px;
+    margin-left: 30px;
 }
-
+.text-size{
+    font-size: 15px;
+}
+.text-size2{
+    font-size: 15px;
+}
 /***************************************BODY (LEFT AND RIGHT SIDE)**********************/
 .body-dashboard{
     display: flex;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    padding-bottom: 0;
+    height: 500px;
 }
 .left-side{
     flex: 1;
@@ -417,34 +430,42 @@ a:hover{
     justify-content: center;
     align-items: center;
     flex-direction: column; 
+    margin-bottom: 0px;
 }
 .right-side{
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: top;
     align-items: center;
     flex-direction: column; 
+    margin-bottom: 0px;
 }
 /*********************************** TABLA DE MIEMBROS****************************************/
 .tablero{
     width: 80%;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 20px;
 }
-
+.table{
+    height: 10%;
+}
 .icon{
     margin-right: 10px;
 }
 .img-table{
-    width:50px;
-    height:55px;
+    width:40px;
+    height:30px;
     border-radius: 100px;
 }
+
 .thead {
     background-color: #1E6B93; 
     color: #FFFFFF;
+    height:10px;
 }
-
+.plus{
+    height: 5px !important; 
+}
 .btn-table {
     background-color: #1E6B93; 
     color: #fff; 
@@ -452,8 +473,9 @@ a:hover{
     cursor: pointer; 
     border: 1px solid #fff;
     padding: 8px 15px;
-    margin-left: 100px;
-
+    margin-left: 50px;
+    width: auto;
+    height: 1px;
 }
 
 .btn-table:hover {
@@ -463,7 +485,7 @@ a:hover{
 
 .tbody{
     background-color: #E2E2E2 ; 
-    
+    height: 10px;
 }
 /*--------------------------------------------------Plan medio------------------------------------------------------------*/
 .plan-medio{
@@ -473,7 +495,7 @@ a:hover{
 .plan-title{
     background-color: #1E6B93; 
     color: #FFFFFF;
-    height: 45px;
+    height: 35px;
     font-size: 5px;
     display: flex;
     align-items: center;
@@ -490,7 +512,7 @@ a:hover{
     justify-content: center;
     background-color: #E2E2E2;
     flex-direction: column;
-    height: 100px;
+    height: 80px;
 }
 .plan-btn{
     background-color: #1E6B93;
@@ -500,6 +522,7 @@ a:hover{
     align-items: center;
     justify-content: center;
     border-radius: 100px;
+    margin-top: -10px;
 }
 .plan-btn:hover {
     background-color: white ; 
@@ -508,18 +531,19 @@ a:hover{
 .btn-plan{
     color: white;
     font-weight: bolder;
+    font-size: 15px;
 }
 
 /*--------------------------------------------------Manual------------------------------------------------------------*/
 .manual{
     width: 545px;
-    height: 150px;
+    height: 100px;
+    margin-top: 10px;
 }
 .manual-container{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
 }
 .manual .manual-container .manual-cont{
     background-color: #E2E2E2;
@@ -528,13 +552,14 @@ a:hover{
     text-align: center;
     justify-content: space-between;
     width: 600px;
-    height: 100px;
+    height: 50px;
 }
 
 .manual .manual-container .manual-cont .manual-msj{
     width: 70%;
     padding: 20px;
     margin-top: 10px;
+    
 }
 .manual .manual-container .manual-cont .manual-icon{
     width: 30%;
@@ -544,23 +569,25 @@ a:hover{
 .manual .manual-container .manual-cont .circle-icon{
     background-color: #1E6B93;
     border-radius: 100px;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
 }
-
+.manual-msj-size{
+    font-size: 15px;
+}
 .icono-documento {
     color: white;
-    font-size: 24px;
+    font-size: 20px;
 }
 /*--------------------------------------------------message------------------------------------------------------------*/
 .message{
     width: 545px;
-    height: 150px;
-    margin-top: -20px;
+    height: 100px;
+    margin-top: -2px;
 }
 .message-container{
     display: flex;
@@ -574,13 +601,14 @@ a:hover{
     text-align: center;
     justify-content: space-between;
     width: 600px;
-    height: 100px;
+    height: 50px;
 }
 
 .message .message-container .message-cont .mensaje{
     width: 70%;
     padding: 20px;
     margin-top: 10px;
+    font-size: 10px;
 }
 .message .message-container .message-cont .message-icon{
     width: 30%;
@@ -590,8 +618,8 @@ a:hover{
 .message .message-container .message-cont .circle-icon{
     background-color: #1a7828;
     border-radius: 100px;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -600,5 +628,112 @@ a:hover{
 
 .icono-whatsapp {
     color: white;
-    font-size: 24px;
+    font-size: 20px;
+}
+
+/*--------------------------------------------------estadisticas------------------------------------------------------------*/
+.estadisticas{
+    width: 600px;
+    height: 150px;
+    margin-top: 20px;
+}
+.estadistica-title{
+    background-color: #1E6B93; 
+    color: #FFFFFF;
+    height: 50px;
+    font-size: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.estadistica-size{
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.container{
+    display: flex;
+    background-color: #E2E2E2;
+}
+
+.left-estadistica{
+    flex: 1;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.right-estadistica{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.img-graphic{
+    width: 160px;
+    height: 160px;
+    margin: 20px 0;
+}
+
+.stadistics-row{
+    height: 160px;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+
+}
+/********************************************Boton desplegable*******************************************/
+.dropdown-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    color: gray;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    width: 150px;
+    height: 30px;
+}
+
+
+/* Icono de despliegue */
+.dropdown-icon {
+    margin-left: 5px;
+}
+
+/* Estilos del contenido desplegable */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Estilos de los elementos dentro del contenido desplegable */
+.dropdown-item {
+    padding: 12px;
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Cambia el color de fondo del elemento al pasar el ratón sobre él */
+.dropdown-item:hover {
+    background-color: #ddd;
+}
+
+/* Muestra el contenido desplegable al hacer clic en el botón */
+.dropdown-btn.active .dropdown-content {
+    display: block;
 }
