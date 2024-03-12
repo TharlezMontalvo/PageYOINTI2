@@ -199,7 +199,7 @@ form {
 }
 
 .right-panel{
-    padding: 3rem 17% 2rem 12%;
+    padding: 3rem 12%;
 }
 
 .panel .content{
@@ -242,21 +242,30 @@ form {
 .img-hidden{
     display: none;
 }
-@media screen and (max-width: 767px) {
+
+@media (max-width: 1000px) {
+    
     .container {
         flex-direction: column-reverse;
     }
   
     .left-panel {
-        visibility: hidden;
+        display: none;
+        
     }
-    .right-panel{
+    .forms-container{
         width: 100%;  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+
     }
     .signin-signup {
       top: 50%;
       display: flex;
       align-items: center;
+      width: 100%;
     }
     
     .transparent{
@@ -280,21 +289,21 @@ form {
         font-size: 1.3rem;
     }
     .field-container{
-        margin-right: 225px;
+        margin-right: 43%;
     }
     .title{
         margin-top: 600px;
-        margin-right: 220px;
+        margin-right: 44%;
         margin-bottom: -25px;
         font-size: 30px;
     }
     .back-button{
-        margin-right: 670px;
+        margin-right: 125%;
         margin-bottom: 600px;
         margin-top: -5px; 
     }
     .solid{
-        margin-right: 225px;
+        margin-right: 43%;
     }
     .input-field input{
         width: 200px;
@@ -306,11 +315,89 @@ form {
         display: block;
         width: 150px;
         height: 150px;
-        margin-right: 250px;
+        margin-right: 45%;
         margin-bottom: 0px;
         margin-top: 20px;
     }
-  }
+}
+
+@media (max-width: 800px) {
+    
+    .container {
+        flex-direction: column-reverse;
+    }
+  
+    .left-panel {
+        display: none;
+        
+    }
+    .forms-container{
+        width: 100%;  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .signin-signup {
+      top: 50%;
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+    
+    .transparent{
+        width: 100px;
+        font-size: 10px;
+    }
+    .panel button:hover{
+        margin: 0;
+        background: black;
+        border: 3px solid rgb(253, 255, 255);
+        color: rgb(255, 255, 255);
+        width: 130px;
+        height: 41px;
+        font-weight: 600;
+        font-size: 15px;
+    }
+    .input-field i{
+        text-align: center;
+        line-height: 55px;
+        color: #686868;
+        font-size: 1.3rem;
+    }
+    .field-container{
+        margin-right: 90%;
+    }
+    .title{
+        margin-top: 600px;
+        margin-right: 90%;
+        margin-bottom: -25px;
+        font-size: 30px;
+    }
+    .back-button{
+        margin-right: 170%;
+        margin-bottom: 600px;
+        margin-top: -5px; 
+    }
+    .solid{
+        margin-right: 90%;
+    }
+    .input-field input{
+        width: 200px;
+    }
+    .input-field i{
+        margin-top: -5px; 
+    }
+    .img-hidden{
+        display: block;
+        width: 150px;
+        height: 150px;
+        margin-right: 90%;
+        margin-bottom: 0px;
+        margin-top: 20px;
+    }
+}
 
 
 
