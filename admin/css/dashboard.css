@@ -577,7 +577,7 @@ a:hover{
     cursor: pointer;
 }
 .manual-msj-size{
-    font-size: 15px;
+    font-size: 20px;
 }
 .icono-documento {
     color: white;
@@ -608,7 +608,7 @@ a:hover{
     width: 70%;
     padding: 20px;
     margin-top: 10px;
-    font-size: 10px;
+    font-size: 12px;
 }
 .message .message-container .message-cont .message-icon{
     width: 30%;
