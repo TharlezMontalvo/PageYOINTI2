@@ -775,3 +775,192 @@ a:hover{
 }
 
 
+/***********************************MODAL 2****************************************************/
+.cambiaplan{
+    width: auto;
+}
+.planheader{
+    width: auto;
+}
+.planbody{
+    width: auto;
+}
+
+
+ .cuadro{
+    width: 90%;
+    height: 80%;
+    border-radius: 8px;
+    overflow: visible;
+    border-style: solid;
+    border-width: 1px;
+    background-color: white;
+    margin: 10px 15px;
+    display: inline-block;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 300ms;
+    font-size: 13px;
+
+}
+ .cuadro .p{
+    font-weight: bold;
+}
+ .cuadro .up-cuadro{
+    background-color: white;
+    color: #1E6B93;
+    font-weight: bolder;
+    border-radius: 8px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.down-cuadro{
+    background-color: #CEAA00;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-radius: 8px;
+    width: 102%;
+    height: 35%;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    margin-top: -2%;
+    margin-left: -1%;
+}
+.card2{
+    background-color: #0190DE;
+}
+
+ .card3{
+    background-color: #06A991;
+}
+ .cuadro:hover{
+    box-shadow: 
+    20px 20px  #2e2e2e, 30px 30px 14px #707070;
+    transform: translate(-5px, -5px);
+}
+ .ol-box {
+    list-style: none;
+    padding: 0;
+}
+
+ .li-box::before {
+    content: "+";
+    display: inline-block;
+    width: 1em;
+    padding: 0;
+}
+ .cuadro img{
+    align-items: center;
+    width: 150px;
+    height: 120px;
+    margin: 5px 100px 5px 100px;
+}
+
+ .cuadro h1{
+    padding: 0 1rem;
+    font-size: 30px;
+    text-align: center;
+    font-family:  'Inter', sans-serif;
+}
+ .cuadro p{
+    padding: 0 1rem;
+    margin-top: 1px;
+    text-align: justify;
+}
+ .cuadro a{
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+    margin: 20px 10px 10px 100px;
+    border-radius: 8px;
+    padding: 10px 25px;
+}
+
+.cuadro ol{
+    font-weight: 500;
+    font-size: 12px;
+    text-decoration: none;
+    margin: 10px 1px 0px 25px;
+}
+/*************************************************MODAL MESSAGE***********************************/
+.message{
+    width: auto;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.message-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.message .message-container .message-cont{
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    width: 60%;
+    height:70px;
+    border-radius: 15px;
+}
+
+.message .message-container .message-cont .mensaje{
+    width: 70%;
+    padding: 20px;
+    margin-top: 10px;
+    font-size: 12px;
+    font-style: italic;
+}
+.message .message-container .message-cont .message-icon{
+    width: 30%;
+    padding: 40px;
+}
+
+.message .message-container .message-cont .circle-icon{
+    background-color: #1a7828;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.icono-whatsapp {
+    color: white;
+    font-size: 24px;
+}
+
+.firstmessage{
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.first-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.first-mensaje{
+    font-size: 13px;
+    font-style: italic;
+}
