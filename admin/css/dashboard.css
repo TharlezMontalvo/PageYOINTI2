@@ -893,7 +893,7 @@ a:hover{
     margin: 10px 1px 0px 25px;
 }
 /*************************************************MODAL MESSAGE***********************************/
-.message{
+.message2{
     width: auto;
     height: 100px;
     display: flex;
@@ -901,13 +901,13 @@ a:hover{
     justify-content: center;
     
 }
-.message-container{
+.message-container2{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
 }
-.message .message-container .message-cont{
+.message2 .message-container2 .message-cont2{
     background-color: #FFFFFF;
     border: 1px solid #000000;
     display: flex;
@@ -919,19 +919,19 @@ a:hover{
     border-radius: 15px;
 }
 
-.message .message-container .message-cont .mensaje{
+.message2 .message-container2 .message-cont2 .mensaje2{
     width: 70%;
     padding: 20px;
     margin-top: 10px;
     font-size: 12px;
     font-style: italic;
 }
-.message .message-container .message-cont .message-icon{
+.message2 .message-container2 .message-cont2 .message-icon2{
     width: 30%;
     padding: 40px;
 }
 
-.message .message-container .message-cont .circle-icon{
+.message2 .message-container2 .message-cont2 .circle-icon2{
     background-color: #1a7828;
     border-radius: 100px;
     width: 50px;
@@ -942,7 +942,7 @@ a:hover{
     cursor: pointer;
 }
 
-.icono-whatsapp {
+.icono-whatsapp2 {
     color: white;
     font-size: 24px;
 }
