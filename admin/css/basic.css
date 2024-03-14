@@ -423,3 +423,12 @@ a:hover{
 .cajamenu{
     margin-top: 25%;
 }
+
+.img-space{
+    width: 150px;
+    height: 80px;
+}
+
+.change{
+    text-align: center;
+}
