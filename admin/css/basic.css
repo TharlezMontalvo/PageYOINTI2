@@ -159,7 +159,9 @@ a:hover{
     width: 100%;
     margin-top: 5%;
 }
-
+.c3{
+    padding: 70px 150px;
+}
 .navbar{
     padding: 10px !important;
     background-color: #1E6B93 !important;
