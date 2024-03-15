@@ -69,15 +69,6 @@
 
             </nav>
 
-            <div class="col-md-12 plan-basic">
-              <div class="plan">
-                  <div class="plan-container">
-                      <div class="plan-basico">   
-                            <p>PLAN BÁSICO:</p> 
-                      </div>   
-                  </div>
-              </div>
-            </div>
         </div>
 
         <!-- MENU LATERAL-->

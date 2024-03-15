@@ -487,6 +487,12 @@ a:hover{
     background-color: #E2E2E2 ; 
     height: 10px;
 }
+.modify{
+    margin-bottom: -150%;
+}
+.mmodify2{
+    margin-top: -5%;
+}
 /*--------------------------------------------------Plan medio------------------------------------------------------------*/
 .plan-medio{
     width: 120%;
@@ -536,7 +542,7 @@ a:hover{
 
 /*--------------------------------------------------Manual------------------------------------------------------------*/
 .manual{
-    width: 545px;
+    width: 100%;
     height: 100px;
     margin-top: 10px;
 }
@@ -551,7 +557,7 @@ a:hover{
     align-items: center;
     text-align: center;
     justify-content: space-between;
-    width: 600px;
+    width: 200%;
     height: 50px;
 }
 
@@ -585,7 +591,7 @@ a:hover{
 }
 /*--------------------------------------------------message------------------------------------------------------------*/
 .message{
-    width: 545px;
+    width: 100%;
     height: 100px;
     margin-top: -2px;
 }
@@ -963,4 +969,72 @@ a:hover{
 .first-mensaje{
     font-size: 13px;
     font-style: italic;
+}
+
+/* Media query para dispositivos móviles */
+@media only screen and (max-width: 800px) {
+    .grid-layout {
+        grid-template-columns: auto; /* Cambiar a una columna para dispositivos móviles */
+        width: 80%;
+        margin-left: 0;
+    }
+    
+    .left-side, .right-side {
+        flex: none; /* Evitar que los lados ocupen todo el ancho */
+    }
+
+    .nav-list {
+        margin-left: 0; /* Eliminar el margen izquierdo en dispositivos móviles */
+    }
+
+    .nav-menu-item {
+        margin-right: 10px; /* Reducir el margen entre elementos de menú en dispositivos móviles */
+    }
+
+    .body-dashboard {
+        flex-direction: column; /* Cambiar la disposición a columnas en dispositivos móviles */
+    }
+
+    .tablero {
+        width: 100%; /* Ajustar el ancho de la tabla en dispositivos móviles */
+    }
+
+    .plus {
+        display: none; /* Ocultar el elemento plus en dispositivos móviles */
+    }
+
+    .plan-title {
+        font-size: 15px; /* Ajustar el tamaño de fuente del título del plan en dispositivos móviles */
+    }
+
+    .plan-btn {
+        width: 120px; /* Ajustar el ancho del botón del plan en dispositivos móviles */
+    }
+    .navadd{
+        width: 10%;
+    }
+    .cajanav{
+        width: 80%;
+    } 
+   .manual-container, .message-container, .estadisticas {
+        width: 100%; /* Ajustar el ancho de los contenedores en dispositivos móviles */
+    }
+    .plan-medio{
+        width: 62.5%;
+        margin-left: 0%;
+    }
+    .manual-container, .message-container{
+        /*width: 62.5%;*/
+        width: 100%;
+        margin-left: 18%;
+    }
+    .mmodify2 {
+        width: 100%; /* Ajustar el ancho al 100% en dispositivos móviles */
+    }
+    .general-container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
