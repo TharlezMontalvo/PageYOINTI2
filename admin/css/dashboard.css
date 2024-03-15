@@ -446,6 +446,8 @@ a:hover{
 .tablero{
     width: 100%;
     align-items: center;
+    margin: 0;
+    height: auto;
 }
 .table{
     height: 10%;
@@ -491,10 +493,14 @@ a:hover{
 .modify{
     flex: 1;
     width: 100%;
+    padding: 0;
+    margin: 0;
+    height: auto;
 }
 .modify2{
     flex: 1;
     width: 100%;
+    padding: 0;
     margin-top: -3%;
 }
 /*--------------------------------------------------Plan medio------------------------------------------------------------*/
@@ -993,7 +999,9 @@ a:hover{
     .left-side, .right-side {
         flex: none; /* Evitar que los lados ocupen todo el ancho */
     }
-
+    .right-side{
+        padding: 3%;
+    }
     .nav-list {
         margin-left: 0; /* Eliminar el margen izquierdo en dispositivos móviles */
     }
