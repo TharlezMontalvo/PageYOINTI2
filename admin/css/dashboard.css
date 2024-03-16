@@ -1062,12 +1062,12 @@ a:hover{
     .plan-btn {
         width: 120px; /* Ajustar el ancho del botón del plan en dispositivos móviles */
     }
-    .navadd{
+   /* .navadd{
         width: 10%;
     }
     .cajanav{
         width: 80%;
-    } 
+    } */
    .manual-container, .message-container, .estadisticas {
         width: 100%; /* Ajustar el ancho de los contenedores en dispositivos móviles */
          /*width: 62.5%;*/
@@ -1089,5 +1089,70 @@ a:hover{
         align-items: center;
         justify-content: center;
     }
-    
+    /****************************************HEADER******************************************/
+    .header {
+        height: 65px;
+        width: auto;
+    }
+
+    .header .logo img {
+        height: 50px;
+        width: auto;
+        padding: 0 20px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        position: fixed;
+        background-color: #656464;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+        height: calc(100% - 230px);
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3s;
+    }
+    .cajanav{
+        width: 100%;
+    }
+    .navadd{
+        width: 100%;
+    }
+    .nav-menu-item {
+        line-height: 50px;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-menu_visible {
+        left: 0;
+    }
+
+    .logo-div1{
+        width: 50px;
+        height: 50px;
+    }
+    .logo-div2{
+        width: 30px;
+        height: 30px;
+    }
+ 
+    .titulocentral h5{
+        font-size: 13px;
+    }
+    .plan-contenido p{
+        font-size: 13px;
+    }
+    .mensaje p{
+        font-size: 9px;
+    }
+    .manual-msj-size{
+        font-size: 15px;
+    }
 }
