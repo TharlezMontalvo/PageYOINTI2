@@ -20,12 +20,12 @@
 
 <body>
     
-    <div class="grid-layout">
+    <header class="header">
         <!-- NAVBAR ADMIN-->
         <div class="caja cajanav">
             
             <!-- Topbar -->
-            <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow navadd">
+            <nav class="navbar navbar-expand navbar-light topbar static-top shadow navadd">
                 <!-- Logo Navbar-->
                 <div class="logo-div1">
                     <div class="logo-div2">
@@ -34,13 +34,15 @@
                 </div>
                 
                 <div class="titulocentral"><h5><b>Plataforma Mi Organización Digital</b></h5></div>
-                <div class="nav-list">
-
-                <ul class="nav-menu ">
-                    <li class="nav-menu-item"><a href="../../index2.html" class="nav-menu-link nav-link"><i class="fas fa-home"></i> Inicio</a></li>     
-                    <li class="nav-menu-item"><a href="./html/contacto.html" class="nav-menu-link nav-link"><i class="fas fa-pencil-ruler"></i> Edición Web</a></li>
-                </ul>
+                <div class="nav-list">             
+                    <ul class="nav-menu ">
+                        <li class="nav-menu-item"><a href="../../index2.html" class="nav-menu-link nav-link"><i class="fas fa-home"></i> Inicio</a></li>     
+                        <li class="nav-menu-item"><a href="./html/contacto.html" class="nav-menu-link nav-link"><i class="fas fa-pencil-ruler"></i> Edición Web</a></li>
+                    </ul>
                 </div>
+                <button class="nav-toggle" aria-label="Abrir menú">
+                        <i class="fas fa-bars"></i>
+                </button>
                 <!-- Topbar Navbar -->
                 <ul class="navbar-nav ml-auto">
 
@@ -119,13 +121,13 @@
 
         <!-- Herramientas -->
             
-    </div>
+    </header>
 
     <div class="title-body">
         <div class="title-logo">
             <img class="logonegro" src="../../img/logoblack.png" alt="">
         </div>
-        <div class="title-text mb-3">
+        <div class="title-text">
             <h5 class="text-size"><b>Nombre Organización</b></h5>
             <h8 class="text-size2">Configuración de la Web</h8>
         </div> 
@@ -133,9 +135,9 @@
     
     <div class="body-dashboard">
 
-        <div class="col left-side" style="background-color: red;">
-            <div class="d-flex justify-content-center mb-5 modify" style="background-color: green;">  
-                <div class="tablero"  style="background-color: aqua; padding: 14px;">
+        <div class="col left-side" >
+            <div class="d-flex justify-content-center modify">  
+                <div class="tablero" >
                     <table class="table">
                         <thead class="thead">
                             <tr>
@@ -333,7 +335,7 @@
                 </div>   
             </div>
 
-            <div class="col text-center d-flex justify-content-center modify2" style="background-color: aquamarine;">
+            <div class="col text-center d-flex justify-content-center modify2" >
                 <div class="d-flex flex-column align-items-center general-container">
                     <div class="col plan-medio">
                         <div class="plan-title">
@@ -386,7 +388,7 @@
 
 
 
-        <div class="right-side" style="background-color: yellow;">
+        <div class="right-side">
             <div class="estadisticas">
                 <div class="estadistica-title">
                     <h3 class="estadistica-size"><i class="fas fa-chart-bar icon"></i>Estadísticas</h3>
