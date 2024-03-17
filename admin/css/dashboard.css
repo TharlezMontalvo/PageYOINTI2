@@ -1244,9 +1244,11 @@ input[type="text"] {
         font-size: 15px; /* Ajustar el tamaño de fuente del título del plan en dispositivos móviles */
     }
 
-    .plan-btn {
-        width: 120px; /* Ajustar el ancho del botón del plan en dispositivos móviles */
-    }
+    /*.plan-btn,  {
+        width: 120px;  Ajustar el ancho del botón del plan en dispositivos móviles 
+    }*/
+
+    
    /* .navadd{
         width: 10%;
     }
