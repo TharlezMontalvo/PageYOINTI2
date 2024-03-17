@@ -447,7 +447,7 @@ a:hover{
     padding-bottom: 0;
     height: 100%;
 }
-.left-side{
+.left-side, .right-side{
     flex: 1;
     display: flex;
     justify-content: center;
@@ -456,15 +456,7 @@ a:hover{
     margin-bottom: 0px;
     height: auto;
 }
-.right-side{
-    flex: 1;
-    display: flex;
-    justify-content: top;
-    align-items: center;
-    flex-direction: column; 
-    margin-bottom: 0px;
-    height: auto;
-}
+
 /*********************************** TABLA DE MIEMBROS****************************************/
 .tablero{
     width: 90%;
@@ -839,7 +831,6 @@ a:hover{
     width: auto;
 }
 
-
  .cuadro{
     width: 90%;
     height: 80%;
@@ -1018,6 +1009,61 @@ a:hover{
     font-size: 13px;
     font-style: italic;
 }
+/*****************************SUBIR IMAGEN********************************************/
+.plan-image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    height: auto;
+    width: 90%;
+    padding: 0;
+}
+.plan-title-img{
+    background-color: #1E6B93; 
+    color: #FFFFFF;
+    height: 50px;
+    font-size: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+}
+.plan-img-container{
+    display: flex;
+    background-color: #E2E2E2;
+    width: 100%;
+    height: 89.5%;
+}
+.plan-left, .plan-right{
+    flex: 1;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.plan-contenido-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2%;
+}
+.plan-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.plan-img img{
+    width: 30%;
+    height: 30%;
+}
+
+
+
 
 /* Media query para dispositivos móviles */
 @media only screen and (max-width: 800px) {
@@ -1142,7 +1188,7 @@ a:hover{
         width: 30px;
         height: 30px;
     }
- 
+ /*********************************MENSAJES DEBAJO DE LA TABLA DE MIEMBROS****************/
     .titulocentral h5{
         font-size: 13px;
     }
