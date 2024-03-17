@@ -1019,6 +1019,7 @@ a:hover{
     height: auto;
     width: 90%;
     padding: 0;
+    margin: 1% 0;
 }
 .plan-title-img{
     background-color: #1E6B93; 
@@ -1058,10 +1059,100 @@ a:hover{
 }
 
 .plan-img img{
-    width: 30%;
-    height: 30%;
+    width: 90px;
+    height: 90px;
+}
+/**********************************REDES SOCIALES**************************************************/
+.redes-sociales{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    height: auto;
+    width: 90%;
+    padding: 0;
+    margin: 0;
+}
+.redes {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.redes-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3% 0;
+}
+.redes-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: #E2E2E2;
+}
+.red-social {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.redes-title{
+    background-color: #1E6B93; 
+    color: #FFFFFF;
+    height: 50px;
+    font-size: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+}
+.redes-text{
+    display: flex;
+    align-items: left;
+}
+.redes .red-social input{
+    border-radius: 100px;
+}
+.logo-circulo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
 }
 
+.logo-circulo img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.btn-guardar {
+    display: block;
+    width: 100px;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-guardar:hover {
+    background-color: #0056b3;
+}
 
 
 
@@ -1114,14 +1205,11 @@ a:hover{
     .cajanav{
         width: 80%;
     } */
-   .manual-container, .message-container, .estadisticas {
+    .plan-medio, .plan-image,.redes-sociales, .manual-container, .message-container, .estadisticas {
         width: 100%; /* Ajustar el ancho de los contenedores en dispositivos móviles */
          /*width: 62.5%;*/
     }
-    .plan-medio{
-       /* width: 62.5%;*/
-       width: 100%;
-    }
+
     .manual, .message{
         width: 100%;
     }
