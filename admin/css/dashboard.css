@@ -678,7 +678,7 @@ a:hover{
 /*--------------------------------------------------estadisticas------------------------------------------------------------*/
 .estadisticas{
     width: 90%;
-    height: 100%;
+    height: 50%;
 }
 .estadistica-title{
     background-color: #1E6B93; 
@@ -1154,8 +1154,56 @@ input[type="text"] {
     background-color: #0056b3;
 }
 
+/************************************************* Subdominio*******************************/
+.subdominio{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    height: auto;
+    width: 90%;
+    padding: 0;
+    margin: 1% 0;
+}
+.subdominios {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.subdominio-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3% 0;
+}
+.subdominio-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: #E2E2E2;
+}
+.subdominio-title{
+    background-color: #1E6B93; 
+    color: #FFFFFF;
+    height: 50px;
+    font-size: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+}
 
+.subdominio-text{
+    display: flex;
+    align-items: left;
+}
 
+.subdominios .red-social input{
+    border-radius: 100px;
+}
 /* Media query para dispositivos móviles */
 @media only screen and (max-width: 800px) {
     
@@ -1205,7 +1253,7 @@ input[type="text"] {
     .cajanav{
         width: 80%;
     } */
-    .plan-medio, .plan-image,.redes-sociales, .manual-container, .message-container, .estadisticas {
+    .plan-medio, .plan-image,.redes-sociales, .manual-container, .message-container, .estadisticas, .subdominio {
         width: 100%; /* Ajustar el ancho de los contenedores en dispositivos móviles */
          /*width: 62.5%;*/
     }
