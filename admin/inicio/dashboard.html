@@ -374,7 +374,7 @@
                         </div>
                         <div class="redes-container">
                             <div class="col redes-text">
-                                <p>Escribe los enlaces de tus Redes Sociales</p>
+                                <p class="parrafo">Escribe los enlaces de tus Redes Sociales</p>
                             </div>
                             <div class="redes">
                                 <div class="red-social">
@@ -421,7 +421,7 @@
                         </div>
                         <div class="subdominio-container">
                             <div class="col subdominio-text">
-                                <p>Escribe el subdominio para tu organización:</p>
+                                <p class="parrafo">Escribe el subdominio para tu organización:</p>
                             </div>
                             <div class="subdominios">
                                 <div class="red-social">
@@ -495,26 +495,81 @@
                 </div>
                 <div class="colores-container">
                     <div class="col colores-text">
-                        <p>De acuerdo a tu diseño de marca, selecciona los colores que identifican a tu organización.</p>
+                        <p class="parrafo">De acuerdo a tu diseño de marca, selecciona los colores que identifican a tu organización.</p>
                     </div>
                     <div class="paleta-container">
                         <div class="paleta-text">
-                        <input type="text" id="color-code" placeholder="Código Hexadecimal" readonly>
+                            <div class="input-color">
+                                <p>Elige el color principal:</p>
+                                <input type="text" id="color-code" placeholder="Código Hexadecimal" readonly>
+                                <p class="texto-cursiva">Escribe el Código RGB</p>
+                            </div>
+                            <div class="input-color">
+                                <p>Elige el color secundario:</p>
+                                <input type="text" id="color-code" placeholder="Código Hexadecimal" readonly>
+                                <p class="texto-cursiva">Escribe el Código RGB</p>
+                            </div>
                         </div>
-                        <div class="color-picker">
-                                            <p>Colores más oscuros</p>
-                                            <div class="color-palette">
-                                                <div class="color" style="background-color: #FF0000;" data-color="#FF0000"></div>
-                                                <div class="color" style="background-color: #00FF00;" data-color="#00FF00"></div>
-                                                <div class="color" style="background-color: #0000FF;" data-color="#0000FF"></div>
-                                                <div class="color" style="background-color: #FFFF00;" data-color="#FFFF00"></div>
-                                                <div class="color" style="background-color: #FF00FF;" data-color="#FF00FF"></div>
-                                                <div class="color" style="background-color: #00FFFF;" data-color="#00FFFF"></div>
-                                                <div class="color" style="background-color: #FF4500;" data-color="#FF4500"></div>
-                                                <div class="color" style="background-color: #8A2BE2;" data-color="#8A2BE2"></div>
-                                            </div>
+                        <div class="paleta-color">
+                            <div class="color-picker">
+                                <p>Colores más oscuros</p>
+                                <div class="color-palette">
+                                    <!-- Paleta de colores oscuros -->
+                                    <div class="color" style="background-color: #660000;" data-color="#660000"></div>
+                                    <div class="color" style="background-color: #006600;" data-color="#006600"></div>
+                                    <div class="color" style="background-color: #000066;" data-color="#000066"></div>
+                                    <div class="color" style="background-color: #666600;" data-color="#666600"></div>
+                                    <div class="color" style="background-color: #660066;" data-color="#660066"></div>
+                                    <div class="color" style="background-color: #006666;" data-color="#006666"></div>
+                                    <div class="color" style="background-color: #333333;" data-color="#333333"></div>
+                                    <div class="color" style="background-color: #111111;" data-color="#111111"></div>
+                                </div>
+                            </div>
+                            <div class="color-picker">
+                                <p>Colores vibrantes</p>
+                                <div class="color-palette">
+                                                    <div class="color" style="background-color: #FF0000;" data-color="#FF0000"></div>
+                                                    <div class="color" style="background-color: #00FF00;" data-color="#00FF00"></div>
+                                                    <div class="color" style="background-color: #0000FF;" data-color="#0000FF"></div>
+                                                    <div class="color" style="background-color: #FFFF00;" data-color="#FFFF00"></div>
+                                                    <div class="color" style="background-color: #FF00FF;" data-color="#FF00FF"></div>
+                                                    <div class="color" style="background-color: #00FFFF;" data-color="#00FFFF"></div>
+                                                    <div class="color" style="background-color: #FF4500;" data-color="#FF4500"></div>
+                                                    <div class="color" style="background-color: #8A2BE2;" data-color="#8A2BE2"></div>
+                                </div>
+                            </div>
+                            <div class="color-picker">
+                                <p>Colores Pastel</p>
+                                <div class="color-palette">
+                                    <!-- Paleta de colores pastel -->
+                                    <div class="color" style="background-color: #FFCCCC;" data-color="#FFCCCC"></div>
+                                    <div class="color" style="background-color: #CCFFCC;" data-color="#CCFFCC"></div>
+                                    <div class="color" style="background-color: #CCCCFF;" data-color="#CCCCFF"></div>
+                                    <div class="color" style="background-color: #FFFFCC;" data-color="#FFFFCC"></div>
+                                    <div class="color" style="background-color: #FFCCFF;" data-color="#FFCCFF"></div>
+                                    <div class="color" style="background-color: #CCFFFF;" data-color="#CCFFFF"></div>
+                                    <div class="color" style="background-color: #EEEEEE;" data-color="#EEEEEE"></div>
+                                    <div class="color" style="background-color: #999999;" data-color="#999999"></div>
+                                </div>
+                            </div>
+                            <div class="color-picker">
+                                <p>Colores monocromáticos</p>
+                                <div class="color-palette">
+                                    <!-- Paleta monocromática en tonos de gris -->
+                                    <div class="color" style="background-color: #333333;" data-color="#333333"></div>
+                                    <div class="color" style="background-color: #666666;" data-color="#666666"></div>
+                                    <div class="color" style="background-color: #999999;" data-color="#999999"></div>
+                                    <div class="color" style="background-color: #BBBBBB;" data-color="#BBBBBB"></div>
+                                    <div class="color" style="background-color: #CCCCCC;" data-color="#CCCCCC"></div>
+                                    <div class="color" style="background-color: #DDDDDD;" data-color="#DDDDDD"></div>
+                                    <div class="color" style="background-color: #EEEEEE;" data-color="#EEEEEE"></div>
+                                    <div class="color" style="background-color: #FFFFFF;" data-color="#FFFFFF"></div>
+                                </div>
+                            </div>
                         </div>
+                        
                     </div>
+                    
                 </div>
             </div>
             <section class="col manual">
@@ -668,6 +723,18 @@
     document.getElementById("subir-archivo").addEventListener("click", function() {
         document.getElementById("archivo-input").click();
     });
+        //Mostrat codigo hexadecimal
+    document.addEventListener('DOMContentLoaded', function() {
+    const colors = document.querySelectorAll('.color');
+    const colorCodeInput = document.getElementById('color-code');
+    
+    colors.forEach(color => {
+        color.addEventListener('click', function() {
+            const selectedColor = this.getAttribute('data-color');
+            colorCodeInput.value = selectedColor;
+        });
+    });
+});
     </script>
     </body>
 </html>
