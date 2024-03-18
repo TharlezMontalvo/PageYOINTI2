@@ -1204,6 +1204,74 @@ input[type="text"] {
 .subdominios .red-social input{
     border-radius: 100px;
 }
+
+/********************************************PALETA DE COLORES***********************/
+.colores{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    height: auto;
+    width: 90%;
+    padding: 0;
+    margin: 1% 0;
+}
+.colores-title{
+    background-color: #1E6B93; 
+    color: #FFFFFF;
+    height: 50px;
+    font-size: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+}
+.colores-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: #E2E2E2;
+}
+
+.colores-text{
+    display: flex;
+    align-items: left;
+}
+.color-picker {
+    display: flex;
+    align-items: center;
+}
+
+.color-palette {
+    display: flex;
+    flex-wrap: nowrap; /* Evita que los colores se envuelvan */
+    overflow-x: auto; /* Añade desplazamiento horizontal si la paleta es más grande que el contenedor */
+    scrollbar-width: none; /* Oculta la barra de desplazamiento en navegadores compatibles */
+    -ms-overflow-style: none; /* Oculta la barra de desplazamiento en Internet Explorer y Edge */
+}
+
+.color-palette::-webkit-scrollbar {
+    display: none; /* Oculta la barra de desplazamiento en navegadores basados en WebKit */
+}
+
+.color {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+#color-code {
+    margin-left: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100px;
+}
 /* Media query para dispositivos móviles */
 @media only screen and (max-width: 800px) {
     
