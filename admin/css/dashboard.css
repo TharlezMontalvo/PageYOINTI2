@@ -1246,6 +1246,8 @@ input[type="text"] {
     flex-direction: column;
     background-color: #000000;
     color: #FFF;
+    flex: 1;
+    width: 100%;
 }
 
 .color-palette {
@@ -1274,6 +1276,31 @@ input[type="text"] {
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 100px;
+}
+
+.paleta-container{
+    display: flex;
+    background-color: #E2E2E2;
+    width: 100%;
+    height: 89.5%;
+}
+
+.paleta-text{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.right-estadistica{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
 }
 /* Media query para dispositivos móviles */
 @media only screen and (max-width: 800px) {
