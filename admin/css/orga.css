@@ -230,7 +230,7 @@ a:hover{
     height: 80%;
     background-color: #E2E2E2;
     width: 60%;
-    padding: 2%;
+    padding: 5%;
   }
 
   .titulo {
@@ -453,5 +453,35 @@ a:hover{
     }
     .titulocentral h5{
         font-size: 13px;
+    }
+    /****************************************Manual de usuario************************/
+    .titulo{
+        font-size: 10px;
+        padding-left: 5%;
+    }
+    .boton-subir{
+        width:5px;
+        height: 25px;
+        padding: 5px 40px;
+        font-size: 10px;
+    }
+    #archivo-seleccionado {
+       
+        font-size: 5px;
+      }
+    /***************************************Whatsapp******************************/
+    .contenedor2{
+        padding-top: 8%;
+    }
+    .titulo2{
+        font-size: 10px;
+        padding-left: 3%;
+    }
+    .input-whatsapp{
+        width: 90%;
+        height: 60%;
+    }
+    .input-whatsapp::placeholder {
+        font-size: 14px; /* Tamaño de letra deseado */
     }
   }
