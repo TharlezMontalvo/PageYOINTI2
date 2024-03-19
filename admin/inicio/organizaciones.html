@@ -18,51 +18,60 @@
     <header class="header">
         <!-- NAVBAR ADMIN-->
         <div class="caja cajanav">
-            
+    
             <!-- Topbar -->
-            <nav class="navbar navbar-expand navbar-light topbar static-top shadow navadd">
+            <nav class="navbar navbar-expand-lg navbar-light topbar static-top shadow navadd">
                 <!-- Logo Navbar-->
                 <div class="logo-div1">
                     <div class="logo-div2">
                         <img class="logonegro" src="../../img/logoblack.png" alt="">
                     </div>
                 </div>
+    
+                <div class="titulocentral">
+                    <h5><b>Plataforma Mi Organización Digital</b></h5>
+                </div>
                 
-                <div class="titulocentral"><h5><b>Plataforma Mi Organización Digital</b></h5></div>
-                <div class="nav-list">             
-                    <ul class="nav-menu ">
-                        <li class="nav-menu-item"><a href="../../index2.html" class="nav-menu-link nav-link"><i class="fas fa-home"></i> Inicio</a></li>     
-                        <li class="nav-menu-item"><a href="./html/contacto.html" class="nav-menu-link nav-link"><i class="fas fa-pencil-ruler"></i> Edición Web</a></li>
+                <!-- Botón de navegación para dispositivos pequeños -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Contenido del menú -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="nav-list">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../index2.html"><i class="fas fa-home"></i> Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./html/contacto.html"><i class="fas fa-pencil-ruler"></i> Edición Web</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa-solid fa-circle-user"></i>
+                                <span class="mr-2 d-none d-lg-inline text-black">Antonio Fernandez</span>
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-1 text-gray-400"></i>
+                                    Cerrar Sesión
+                                </a>
+                            </div>
+                        </li>
                     </ul>
                 </div>
-                <button class="nav-toggle" aria-label="Abrir menú">
-                        <i class="fas fa-bars"></i>
-                </button>
-                <!-- Topbar Navbar -->
-                <ul class="navbar-nav ml-auto">
-
-                    <!-- Nav Item - User Information -->
-                    <li class="nav-item dropdown no-arrow">
-                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fa-solid fa-circle-user"></i>
-                            <span class="mr-2 d-none d-lg-inline text-black ">Antonio Fernandez</span>
-                            
-                        </a>
-                        <!-- Dropdown - User Information -->
-                        <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                            aria-labelledby="userDropdown">
-                            
-                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                                <i class="fas fa-sign-out-alt fa-sm fa-fw mr-1 text-gray-400"></i>
-                                Cerrar Sesión
-                            </a>
-                        </div>
-                    </li>
-                </ul>
             </nav>
         </div>
     </header>
+    
     <div class="first-body">
         <div class="manual-container">
             <div class="contenedor">
@@ -89,45 +98,28 @@
                 <h5><i class="fas fa-users"></i> Organizaciones</h5>
                 <button type="button" class="btn add-button" data-toggle="modal" data-target="#agregarModal"><i class="fas fa-plus"></i></button>
             </div>
-            <table class="table">
-              <thead class="thead-dark">
-                <tr>
-                  <th>ID</th>
-                  <th>Organización</th>
-                  <th>Subdominio</th>
-                  <th>Representante</th>
-                  <th>Teléfono</th>
-                  <th>Correo</th>
-                  <th>Plan</th>
-                  <th>Fecha de inicio</th>
-                  <th>Fecha de término</th>
-                  <th>N° de miembros</th>
-                  <th>Usuario</th>
-                  <th>Contraseña</th>
-                  <th>Edición</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>Ejemplo Corp.</td>
-                  <td>ejemplo</td>
-                  <td>Juan Pérez</td>
-                  <td>1234567890</td>
-                  <td>juan@example.com</td>
-                  <td>Plan A</td>
-                  <td>2024-01-01</td>
-                  <td>2024-12-31</td>
-                  <td>10</td>
-                  <td>juanp</td>
-                  <td>********</td>
-                  <td>
-                    <button type="button" class="btn btn-primary edit-button"><i class="fas fa-eye"></i></button>
-                    <button type="button" class="btn btn-danger delete-button"><i class="fas fa-user-times"></i></button>
-                  </td>
-                </tr>
-                <tr>
-                    <td>2</td>
+            <div class="table-responsive">
+                <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                    <th>ID</th>
+                    <th>Organización</th>
+                    <th>Subdominio</th>
+                    <th>Representante</th>
+                    <th>Teléfono</th>
+                    <th>Correo</th>
+                    <th>Plan</th>
+                    <th>Fecha de inicio</th>
+                    <th>Fecha de término</th>
+                    <th>N° de miembros</th>
+                    <th>Usuario</th>
+                    <th>Contraseña</th>
+                    <th>Edición</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>1</td>
                     <td>Ejemplo Corp.</td>
                     <td>ejemplo</td>
                     <td>Juan Pérez</td>
@@ -140,31 +132,50 @@
                     <td>juanp</td>
                     <td>********</td>
                     <td>
-                      <button type="button" class="btn btn-primary edit-button"><i class="fas fa-eye"></i></button>
-                      <button type="button" class="btn btn-danger delete-button"><i class="fas fa-user-times"></i></button>
+                        <button type="button" class="btn btn-primary edit-button"><i class="fas fa-eye"></i></button>
+                        <button type="button" class="btn btn-danger delete-button"><i class="fas fa-user-times"></i></button>
                     </td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Ejemplo Corp.</td>
-                    <td>ejemplo</td>
-                    <td>Juan Pérez</td>
-                    <td>1234567890</td>
-                    <td>juan@example.com</td>
-                    <td>Plan A</td>
-                    <td>2024-01-01</td>
-                    <td>2024-12-31</td>
-                    <td>10</td>
-                    <td>juanp</td>
-                    <td>********</td>
-                    <td>
-                      <button type="button" class="btn btn-primary edit-button"><i class="fas fa-eye"></i></button>
-                      <button type="button" class="btn btn-danger delete-button"><i class="fas fa-user-times"></i></button>
-                    </td>
-                </tr>
-                <!-- Puedes añadir más filas aquí -->
-              </tbody>
-            </table>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Ejemplo Corp.</td>
+                        <td>ejemplo</td>
+                        <td>Juan Pérez</td>
+                        <td>1234567890</td>
+                        <td>juan@example.com</td>
+                        <td>Plan A</td>
+                        <td>2024-01-01</td>
+                        <td>2024-12-31</td>
+                        <td>10</td>
+                        <td>juanp</td>
+                        <td>********</td>
+                        <td>
+                        <button type="button" class="btn btn-primary edit-button"><i class="fas fa-eye"></i></button>
+                        <button type="button" class="btn btn-danger delete-button"><i class="fas fa-user-times"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Ejemplo Corp.</td>
+                        <td>ejemplo</td>
+                        <td>Juan Pérez</td>
+                        <td>1234567890</td>
+                        <td>juan@example.com</td>
+                        <td>Plan A</td>
+                        <td>2024-01-01</td>
+                        <td>2024-12-31</td>
+                        <td>10</td>
+                        <td>juanp</td>
+                        <td>********</td>
+                        <td>
+                        <button type="button" class="btn btn-primary edit-button"><i class="fas fa-eye"></i></button>
+                        <button type="button" class="btn btn-danger delete-button"><i class="fas fa-user-times"></i></button>
+                        </td>
+                    </tr>
+                    <!-- Puedes añadir más filas aquí -->
+                </tbody>
+                </table>
+            </div>
         </div>
     </div>
     <div class="modal fade" id="agregarModal" tabindex="-1" role="dialog" aria-labelledby="agregarModalLabel" aria-hidden="true">

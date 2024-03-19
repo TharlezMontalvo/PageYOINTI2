@@ -115,8 +115,10 @@
 }
 .nav-list{
     margin-left: 200px;
-    margin-top: 10px;
-    cursor: pointer;
+     cursor: pointer;
+}
+.nav-list a{
+     color: black; 
 }
 .cabecera{
     display: block;
@@ -203,6 +205,7 @@ a:hover{
     height: 500px;
     border: 4px solid rgb(7, 7, 7);
 }
+
 /********************************************BODY***************************************************/
 .first-body{
     display: flex;
@@ -385,4 +388,70 @@ a:hover{
 
   .btn-secondary{
     background-color: #1E6B93;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .header {
+        height: 65px;
+        width: auto;
+    }
+
+    .header .logo img {
+        height: 50px;
+        width: auto;
+        padding: 0 20px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        position: fixed;
+        background-color: #656464;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+        height: calc(100% - 230px);
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3s;
+    }
+    .cajanav{
+        width: 100%;
+    }
+    .navbar-collapse {
+        background-color: #1E6B93; /* Cambia este color según tus preferencias */
+        text-align: center; /* Centra el contenido horizontalmente */
+    }
+    .nav-list{
+        margin: 0;
+        cursor: pointer;
+    }
+    .navadd{
+        width: 100%;
+    }
+    .nav-menu-item {
+        line-height: 50px;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-menu_visible {
+        left: 0;
+    }
+
+    .logo-div1{
+        width: 50px;
+        height: 50px;
+    }
+    .logo-div2{
+        width: 30px;
+        height: 30px;
+    }
+    .titulocentral h5{
+        font-size: 13px;
+    }
   }
