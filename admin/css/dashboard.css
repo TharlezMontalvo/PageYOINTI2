@@ -576,17 +576,24 @@ a:hover{
 }
 
 /*--------------------------------------------------Manual------------------------------------------------------------*/
-.manual{
+.parte-inferior{
+    display: flex;
+    justify-content: space-between;
     width: 90%;
+}
+.manual{
+    width: 30% !important;
     height: 100px;
-    margin-top: 10px;
-    padding: 0;
-
+    margin-top: 8px;
+    padding: 0;  
+    background-color: #1E9329;
+    flex: 1;
 }
 .manual-container{
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 .manual .manual-container .manual-cont{
     background-color: #E2E2E2;
@@ -595,18 +602,25 @@ a:hover{
     text-align: center;
     justify-content: space-between;
     width: 100%;
-    height: 50px;
+    height: auto;
+    flex-direction: column; 
 }
 
 .manual .manual-container .manual-cont .manual-msj{
-    width: 70%;
-    padding: 20px;
-    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    /*margin-top: 10px;**/
     
 }
+.manual-msj h4{
+    font-size: 15px;
+}
 .manual .manual-container .manual-cont .manual-icon{
-    width: 30%;
-    padding: 40px;
+    width: 100%;
+    padding:0;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
 .manual .manual-container .manual-cont .circle-icon{
@@ -628,15 +642,17 @@ a:hover{
 }
 /*--------------------------------------------------message------------------------------------------------------------*/
 .message{
-    width: 90%;
+    width: 10px;
     height: 100px;
-    margin-top: -2px;
     padding: 0;
+    background-color: red;
+    flex: 1;
 }
 .message-container{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 .message .message-container .message-cont{
     background-color: #E2E2E2;
@@ -644,19 +660,24 @@ a:hover{
     align-items: center;
     text-align: center;
     justify-content: space-between;
-    width: 200%;
-    height: 50px;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
 }
 
 .message .message-container .message-cont .mensaje{
-    width: 70%;
-    padding: 20px;
-    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    /*margin-top: 10px;*/
     font-size: 12px;
 }
 .message .message-container .message-cont .message-icon{
-    width: 30%;
-    padding: 40px;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0;
 }
 
 .message .message-container .message-cont .circle-icon{
@@ -674,7 +695,9 @@ a:hover{
     color: white;
     font-size: 20px;
 }
-
+.mensaje p{
+    font-size: 8px;
+}
 /*--------------------------------------------------estadisticas------------------------------------------------------------*/
 .estadisticas{
     width: 90%;
@@ -1260,6 +1283,9 @@ input[type="text"] {
     overflow-x: auto; /* Añade desplazamiento horizontal si la paleta es más grande que el contenedor */
     scrollbar-width: none; /* Oculta la barra de desplazamiento en navegadores compatibles */
     -ms-overflow-style: none; /* Oculta la barra de desplazamiento en Internet Explorer y Edge */
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .color-palette::-webkit-scrollbar {
@@ -1289,16 +1315,7 @@ input[type="text"] {
     height: 89.5%;
 }
 
-.paleta-text{
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-}
-
-.paleta-color{
+.paleta-text, .paleta-color{
     flex: 1;
     display: flex;
     align-items: center;
@@ -1318,7 +1335,6 @@ input[type="text"] {
 .parrafo{
     margin-top: 10px;
 }
-
 /* Media query para dispositivos móviles */
 @media only screen and (max-width: 800px) {
     
@@ -1370,7 +1386,7 @@ input[type="text"] {
     .cajanav{
         width: 80%;
     } */
-    .plan-medio, .plan-image,.redes-sociales, .manual-container, .message-container, .estadisticas, .subdominio {
+    .plan-medio, .plan-image,.redes-sociales, .manual-container, .message-container, .estadisticas, .colores-container, .subdominio {
         width: 100%; /* Ajustar el ancho de los contenedores en dispositivos móviles */
          /*width: 62.5%;*/
     }

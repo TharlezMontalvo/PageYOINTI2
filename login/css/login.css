@@ -253,7 +253,11 @@ form {
 .img-hidden{
     display: none;
 }
-
+.field-container a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 @media (max-width: 1000px) {
     
     .container {
