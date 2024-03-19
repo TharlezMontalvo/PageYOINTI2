@@ -501,12 +501,12 @@
                         <div class="paleta-text">
                             <div class="input-color">
                                 <p>Elige el color principal:</p>
-                                <input type="text" id="color-code" placeholder="Código Hexadecimal" readonly>
+                                <input type="text" id="color-code-primary" placeholder="Código Hexadecimal" readonly>
                                 <p class="texto-cursiva">Escribe el Código RGB</p>
                             </div>
                             <div class="input-color">
                                 <p>Elige el color secundario:</p>
-                                <input type="text" id="color-code" placeholder="Código Hexadecimal" readonly>
+                                <input type="text" id="color-code-secondary" placeholder="Código Hexadecimal" readonly>
                                 <p class="texto-cursiva">Escribe el Código RGB</p>
                             </div>
                         </div>
@@ -726,17 +726,27 @@
         document.getElementById("archivo-input").click();
     });
         //Mostrat codigo hexadecimal
-    document.addEventListener('DOMContentLoaded', function() {
-    const colors = document.querySelectorAll('.color');
-    const colorCodeInput = document.getElementById('color-code');
-    
-    colors.forEach(color => {
-        color.addEventListener('click', function() {
-            const selectedColor = this.getAttribute('data-color');
-            colorCodeInput.value = selectedColor;
+        document.addEventListener('DOMContentLoaded', function() {
+    const colorInputs = document.querySelectorAll('.color-code-input input');
+    const colorPalettes = document.querySelectorAll('.color-palette .color');
+
+    colorPalettes.forEach(color => {
+        color.addEventListener('click', function(event) {
+            const selectedColor = event.target.dataset.color || window.getComputedStyle(event.target).backgroundColor;
+            const inputToUpdate = event.target.closest('.paleta-container').querySelector('.color-code-input input');
+
+            inputToUpdate.value = rgbToHex(selectedColor);
         });
     });
 });
+
+function rgbToHex(rgb) {
+    const rgba = rgb.match(/\((\d+),\s*(\d+),\s*(\d+)(,\s*\d+\.\d+)?\)/);
+    function hex(x) {
+        return ('0' + parseInt(x).toString(16)).slice(-2);
+    }
+    return "#" + hex(rgba[1]) + hex(rgba[2]) + hex(rgba[3]);
+}
     </script>
     </body>
 </html>
