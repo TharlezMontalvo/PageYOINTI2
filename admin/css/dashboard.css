@@ -642,8 +642,8 @@ a:hover{
 }
 /*--------------------------------------------------message------------------------------------------------------------*/
 .message{
-    width: 10px;
-    height: 100px;
+    width: 70% !important;
+        height: 100px;
     padding: 0;
     background-color: red;
     flex: 1;
@@ -1330,6 +1330,9 @@ input[type="text"] {
 }
 .input-color{
     margin: 2% 0;
+}
+.input-button{
+    margin-bottom: 2%;
 }
 /*********************************************GENERALES**************************************/
 .parrafo{
