@@ -132,7 +132,7 @@
                     <td>juanp</td>
                     <td>********</td>
                     <td>
-                        <button type="button" class="btn btn-primary edit-button"><i class="fas fa-eye"></i></button>
+                        <button type="button" class="btn btn-primary edit-button" onclick="editarFila(this)"><i class="fas fa-eye"></i></button>
                         <button type="button" class="btn btn-danger delete-button"><i class="fas fa-user-times"></i></button>
                     </td>
                     </tr>
@@ -248,7 +248,81 @@
             </div>
           </div>
         </div>
-      </div>
+    </div>
+
+    <div class="modal fade" id="editarModal" tabindex="-1" role="dialog" aria-labelledby="editarModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable modal-sm" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="editarModalLabel">Editar Fila</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <!-- Aquí van los campos del formulario -->
+              <form id="editarForm">
+                <div class="row">
+                    <!-- Columna izquierda -->
+                    <div class="col-md-6 left">
+                      <div class="form-group">
+                        <label for="organizacion">Organización</label>
+                        <input type="text" class="form-control" id="organizacion">
+                      </div>
+                      <div class="form-group">
+                        <label for="representante">Representante</label>
+                        <input type="text" class="form-control" id="representante">
+                      </div>
+                      <div class="form-group">
+                        <label for="subdominio">Subdominio</label>
+                        <input type="text" class="form-control" id="subdominio">
+                      </div>
+                      <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" class="form-control" id="telefono">
+                      </div>
+                      <div class="form-group">
+                        <label for="correo">Correo</label>
+                        <input type="email" class="form-control" id="correo">
+                      </div>
+                    </div>
+                    <!-- Columna derecha -->
+                    <div class="col-md-6 right">
+                      <div class="form-group">
+                        <label for="plan">Plan</label>
+                        <input type="text" class="form-control" id="plan">
+                      </div>
+                      <div class="form-group">
+                        <label for="fecha_inicio">Fecha de inicio</label>
+                        <input type="date" class="form-control" id="fecha_inicio">
+                      </div>
+                      <div class="form-group">
+                        <label for="fecha_termino">Fecha de término</label>
+                        <input type="date" class="form-control" id="fecha_termino">
+                      </div>
+                      <div class="form-group">
+                        <label for="miembros">N° de miembros</label>
+                        <input type="number" class="form-control" id="miembros">
+                      </div>
+                      <div class="form-group">
+                        <label for="usuario">Usuario</label>
+                        <input type="text" class="form-control" id="usuario">
+                      </div>
+                      <div class="form-group">
+                        <label for="contrasena">Contraseña</label>
+                        <input type="password" class="form-control" id="contrasena">
+                      </div>
+                    </div>
+                  </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" onclick="habilitarEdicion()">Editar</button>
+              <button type="button" class="btn btn-danger" onclick="limpiarCampos()">Limpiar</button>
+            </div>
+          </div>
+        </div>
+    </div>
 
 
 
@@ -269,6 +343,37 @@
         archivoSeleccionado.textContent = '';
       }
     });
+
+    //modal segundo
+     // Función para abrir el modal y cargar la información de la fila
+  function editarFila(btn) {
+    // Obtener la fila correspondiente
+    var fila = btn.closest('tr');
+    // Obtener los datos de la fila
+    var organizacion = fila.cells[1].innerText.trim();
+    // Otros campos de la fila...
+    
+    // Asignar los datos a los campos del formulario en el modal
+    document.getElementById('organizacion').value = organizacion;
+    // Otros campos del formulario...
+    
+    // Abrir el modal
+    $('#editarModal').modal('show');
+  }
+
+  // Función para habilitar la edición de los campos del formulario
+  function habilitarEdicion() {
+    // Habilitar la edición de los campos
+    document.getElementById('organizacion').readOnly = false;
+    // Otros campos del formulario...
+  }
+
+  // Función para limpiar los campos del formulario
+  function limpiarCampos() {
+    // Limpiar los valores de los campos
+    document.getElementById('organizacion').value = '';
+    // Otros campos del formulario...
+  }
     </script>
 </body>
 </html>
