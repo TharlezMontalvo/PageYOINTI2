@@ -759,6 +759,53 @@ body {
     border: solid #7F7F7F;
     border-width: 1px;
 }
+@media (max-width:768px){
+.estadisticas{
+    display: flex;                  
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.estadisticas .tabla-est .container-est .img-est img{
+    width: 250px;
+    height: 230px;
+    margin-bottom: 30px;
+}
+
+
+.container-est{
+    /*width: 450px;
+    height: 1200px;*/
+    width: 80%;
+    height: 95%;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+}
+
+.estadisticas .tabla-est .container-est .row1{
+    margin-bottom: 10px;
+    text-align: center;
+}
+.estadisticas .tabla-est .container-est .row2{
+    margin-top: 10px;
+    text-align: center;
+}   
+.estadisticas .tabla-est .container-est .row1 h1{
+    font-size: 20px;
+    text-align: center;
+}
+.estadisticas .tabla-est .container-est .row1 p{
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.estadisticas .tabla-est .container-est .row2 h1{
+    font-size: 30px;
+}
+.estadisticas .tabla-est .container-est .row2 p{   
+    font-size: 17px;
+}
+}
 /*--------------------------------------------------footer-------------------------------------------------------------*/
 
 .prefooter{
