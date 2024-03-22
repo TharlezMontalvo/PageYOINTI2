@@ -20,7 +20,7 @@ body {
 
 .mini-nav {
     background-color: #ffffff;
-    padding-top: 85px;
+
 }
 
 .mini {
@@ -63,10 +63,11 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 2% 0 !important;
+    margin: 2% 0;
     padding: 0 !important;
 
 }
+
 .tittle-proyectos h1{
     color: #fdbe1e;
     margin-top: 4% ;
@@ -75,8 +76,42 @@ body {
 }
 .info-proyectos p{
     font-size: 15px !important;
+    padding: 0 20%;
 }
-/**************************************************************************************************/
+@media (max-width: 768px ){
+    .cab-info-proyectos{
+        margin-top: 30px !important;
+        width: 85%;
+        justify-content: space-between;
+        justify-items: center;
+        margin:  0 auto;
+        margin-bottom: 10px;
+        display: grid;
+        place-items: center;
+    }
+    
+    .tittle-proyectos{
+        display: grid;
+        place-items: center;
+    }
+
+    .tittle-proyectos h1{
+        font-weight: 600;
+        font-size: 20px;
+    }
+    
+    .info-proyectos {
+        width: 100%;
+        text-align: justify;
+    }
+    .info-proyectos p{
+        width: 100%;
+        text-align: justify;
+        font-size: 15px !important;
+        padding: 0 30px;
+    }
+}
+/***************************************************************************************************/
 .tittlesrvc a {
     position: relative;
     display: block;
