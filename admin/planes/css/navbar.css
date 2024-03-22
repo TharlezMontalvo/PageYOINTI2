@@ -513,6 +513,47 @@ body {
     border-radius: 50%;
     background-color: #FFB602;
 }
+@media (max-width: 768px){
+    .about .about-container .content p{
+        padding: 0 1px;
+        line-height: 2;
+        text-align: justify;
+        font-size: 15px;
+        font-family: 'Inter', sans-serif;
+        font-size: 13px;
+        margin-bottom: 20px;
+        padding: 0 25px;
+        line-height: 1.7;
+    }
+    .slideproyectos{
+        height: 200px !important;
+    }
+    .slideproyectos .carousel-control-prev .carousel-control-prev-icon{
+        height: 35px;
+        width: 35px;
+    }
+    .slideproyectos .carousel-control-next .carousel-control-next-icon{
+        height: 35px;
+        width: 35px;
+    }
+}     
+@media (max-width: 768px){
+    .carousel-inner .carouselhome{
+        min-height: 200px !important;
+    }
+    .carousel-inner .carousel-item{
+        min-height: 200px !important;
+    }
+    .carousel-item .carousel-caption h1{
+        font-size: 20px !important;
+    }
+    .carousel-item .carousel-caption p{
+        display: none;
+    }
+    .carousel-inner .carouselhome{
+        max-height: 200px !important;
+    }
+}
 /*----------------------------Nosotros-------------------------*/
 .Nosotros{
     min-height: 100hv;
