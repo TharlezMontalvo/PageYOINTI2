@@ -110,6 +110,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .features .container-cuadro .cuadro{
@@ -135,7 +136,7 @@ html{
 .features .container-cuadro .cuadro p{
     margin-top: .5rem;
     padding: 0 2rem 0 3rem;
-    font-size: 18px;
+    font-size: 14px;
     text-align: center;
     font-family:  sans-serif;
 }
