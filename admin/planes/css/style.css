@@ -612,7 +612,27 @@
     width: 20px;
     height: 20px;
 }
+@media (max-width: 768px){
+    .equipo-container{
+        width: 90%;
+    }
+    .equipo-body{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+   
+    }
+    .card-equipo{
+        padding: 0;
+        margin: 0;
 
+        text-align: center;
+    }
+    .card-equipo img{
+        width: 100px;
+        height: 100px;
+    }
+}
 /*---------------------------------------------------Estadisticas-----------------------------------------------------*/
 .estadisticas{
     margin-top: 60px;
