@@ -14,7 +14,12 @@
         margin-top: -7px;;   
     }
 }
-
+.footer-1 .g1 .field input{
+    width: 300px;
+}
+.footer-1 .g1 .btnsub input{
+    width: 150px;
+}
 .footer-1 .g1{
     width: 80%;
     display: flex;
