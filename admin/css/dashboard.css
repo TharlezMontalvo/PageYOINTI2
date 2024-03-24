@@ -580,6 +580,57 @@ a:hover{
     justify-content: space-between;
     width: 90%;
 }
+.a{
+    width: 35%;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.a-container, .b-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #E2E2E2 ; 
+    text-align: center;
+    padding: 5px 0;
+}
+.a-container h5{
+    font-size: 19px;
+}
+.a-container .circle-icon{
+    background-color: #1E6B93;
+    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.b{
+    width: 65%;
+    background-color: #E2E2E2 ; 
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.b-container p{
+    font-size: 12px;
+    padding: 0 5px;
+}
+.b-container .circle-icon{
+    background-color: #1a7828;
+    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
 .manual{
     width: 30% !important;
     height: 100px;
@@ -641,7 +692,7 @@ a:hover{
 }
 /*--------------------------------------------------message------------------------------------------------------------*/
 .message{
-    width: 70% !important;
+    width: 60% !important;
         height: 100px;
     padding: 0;
     background-color: red;
