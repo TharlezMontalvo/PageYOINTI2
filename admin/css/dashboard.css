@@ -582,10 +582,12 @@ a:hover{
 }
 .a{
     width: 35%;
+    background-color: #E2E2E2 ; 
     padding: 5px 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 5px 0;
 }
 .a-container, .b-container{
     display: flex;
@@ -594,10 +596,10 @@ a:hover{
     flex-direction: column;
     background-color: #E2E2E2 ; 
     text-align: center;
-    padding: 5px 0;
 }
+
 .a-container h5{
-    font-size: 19px;
+    font-size: 12px;
 }
 .a-container .circle-icon{
     background-color: #1E6B93;
@@ -610,16 +612,18 @@ a:hover{
     cursor: pointer;
 }
 .b{
-    width: 65%;
+    width: 63%;
     background-color: #E2E2E2 ; 
     padding: 5px 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 5px 0;
 }
 .b-container p{
-    font-size: 12px;
+    font-size: 10px;
     padding: 0 5px;
+    margin: 0;
 }
 .b-container .circle-icon{
     background-color: #1a7828;
@@ -631,122 +635,29 @@ a:hover{
     justify-content: center;
     cursor: pointer;
 }
-.manual{
-    width: 30% !important;
-    height: 100px;
-    margin-top: 8px;
-    padding: 0;  
-    background-color: #1E9329;
-    flex: 1;
-}
-.manual-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-.manual .manual-container .manual-cont{
-    background-color: #E2E2E2;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: space-between;
-    width: 100%;
-    height: auto;
-    flex-direction: column; 
-}
-
-.manual .manual-container .manual-cont .manual-msj{
-    width: 100%;
-    padding: 10px;
-    /*margin-top: 10px;**/
-    
-}
-.manual-msj h4{
-    font-size: 15px;
-}
-.manual .manual-container .manual-cont .manual-icon{
-    width: 100%;
-    padding:0;
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
-
-.manual .manual-container .manual-cont .circle-icon{
-    background-color: #1E6B93;
-    border-radius: 100px;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-.manual-msj-size{
-    font-size: 20px;
-}
-.icono-documento {
+@media (max-width: 768px) {
+    .parte-inferior{
+        width: 100%;
+        flex-direction: column;
+    }
+    .a, .b{
+        width: 100%;
+        padding: 0;
+        margin: 5px 0;
+    }
+    .a-container, .b-container{
+        width: 100%;
+    }
+    .a-container h5{
+        font-size: 16px;
+    }
+    .b-container p{
+        font-size: 13px;
+        padding: 0 1px;
+    }
+    .a-container .circle-icon{
     color: white;
-    font-size: 20px;
-}
-/*--------------------------------------------------message------------------------------------------------------------*/
-.message{
-    width: 60% !important;
-        height: 100px;
-    padding: 0;
-    background-color: red;
-    flex: 1;
-}
-.message-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-.message .message-container .message-cont{
-    background-color: #E2E2E2;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: space-between;
-    width: 100%;
-    height: auto;
-    flex-direction: column;
-}
-
-.message .message-container .message-cont .mensaje{
-    width: 100%;
-    padding: 10px;
-    /*margin-top: 10px;*/
-    font-size: 12px;
-}
-.message .message-container .message-cont .message-icon{
-    width: 100%;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin: 0;
-}
-
-.message .message-container .message-cont .circle-icon{
-    background-color: #1a7828;
-    border-radius: 100px;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-
-.icono-whatsapp {
-    color: white;
-    font-size: 20px;
-}
-.mensaje p{
-    font-size: 8px;
+    }
 }
 /*--------------------------------------------------estadisticas------------------------------------------------------------*/
 .estadisticas{
