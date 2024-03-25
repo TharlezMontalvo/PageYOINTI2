@@ -254,7 +254,7 @@ body{
 }
 
 .about .about-container h1{
-    font-size: 3rem;
+    font-size: 40px;
     font-family: 'Inter', sans-serif;
     text-align: center;
     padding: 0 100px;
@@ -262,7 +262,7 @@ body{
 .about .about-container .content-about{
     margin: 0px 100px;
     text-align: center;
-    font-size: 18px;
+    font-size: 15px;
 }
 @media (max-width: 768px){
     
@@ -368,13 +368,17 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+}
+.container-cuadro{
+    width: 100%;
 }
 .cuadrado .container-cua .container-cuadro{
     display: flex;
 }
 
 .cuadrado .container-cuadro .cuadro{
-    width: 350px;
+    width: 30%;
     height: 460px;
     border-radius: 8px;
     overflow: visible;
