@@ -1323,6 +1323,14 @@ input[type="text"] {
 .parrafo{
     margin-top: 10px;
 }
+
+.footer-2{
+    background-color: #191818;
+    margin: auto;
+    text-align: center;
+    color: #EDEDED;
+}
+
 /* Media query para dispositivos móviles */
 @media only screen and (max-width: 800px) {
     
@@ -1481,6 +1489,10 @@ input[type="text"] {
     /**********************************PALETA  DE COLORES*********************************************/
     .paleta-container{
         flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
     .paleta-color, .paleta-text{
         width: 100%;
@@ -1491,6 +1503,9 @@ input[type="text"] {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+    }
+    .inputcolor{
+        width: 80%;
     }
     .input-button{
         display: flex;
