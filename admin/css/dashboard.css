@@ -445,6 +445,7 @@ a:hover{
     display: flex;
     padding-bottom: 0;
     height: 100%;
+    margin-bottom: 0.5%;
 }
 .left-side, .right-side{
     flex: 1;
