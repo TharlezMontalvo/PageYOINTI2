@@ -812,6 +812,9 @@ a:hover{
 .cambiaplan{
     width: auto;
 }
+.close{
+    color: #FFFFFF;
+  }
 .planheader{
     width: auto;
 }

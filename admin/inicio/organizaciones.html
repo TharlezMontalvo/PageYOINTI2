@@ -346,11 +346,9 @@
     var fila = btn.closest('tr');
     // Obtener los datos de la fila
     var organizacion = fila.cells[1].innerText.trim();
-    // Otros campos de la fila...
     
     // Asignar los datos a los campos del formulario en el modal
     document.getElementById('organizacion').value = organizacion;
-    // Otros campos del formulario...
     
     // Abrir el modal
     $('#editarModal').modal('show');
@@ -360,14 +358,12 @@
   function habilitarEdicion() {
     // Habilitar la edición de los campos
     document.getElementById('organizacion').readOnly = false;
-    // Otros campos del formulario...
   }
 
   // Función para limpiar los campos del formulario
   function limpiarCampos() {
     // Limpiar los valores de los campos
     document.getElementById('organizacion').value = '';
-    // Otros campos del formulario...
   }
     </script>
 </body>
