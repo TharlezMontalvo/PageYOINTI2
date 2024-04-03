@@ -33,7 +33,7 @@
     height: 6vh;
     display: flex;
     justify-content: space-between;
-    height: 100%;
+    height: 65px;
     width: 100%;
 }
 .navadd{
@@ -119,7 +119,7 @@
     color: white !important;
 }
 .nav-list{
-   
+    padding-left: 25% ;
      cursor: pointer;
 }
 .nav-list a{
@@ -170,7 +170,7 @@ a:hover{
     font-weight: bold;
 }
 .logonegro{
-    height: 50px;
+    height: 30px;
 }
 
 .logo-div1{
