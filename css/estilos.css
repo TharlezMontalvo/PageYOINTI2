@@ -394,7 +394,7 @@ body{
     overflow: visible;
     border-style: solid;
     border-width: 1px;
-    background-color: #DDDDDD;
+    background-color: #CCCCCC;
     margin: 0 50px;
     display: inline-block;
     padding-top: 150px;
@@ -434,6 +434,18 @@ body{
     height: 0; /* Reducir la altura del cuadro */
     opacity: 0; /* Ocultar el cuadro */
   }
+  .cuadrado .container-cuadro .cuadro .up-cuadro .lorem-ipsum {
+    display: none; /* Por defecto ocultamos el lorem ipsum */
+    text-align: justify; /* Centramos el texto */
+    padding: 0 10%;
+    margin-top: 10%;
+    padding-bottom: 40%;
+}
+
+.cuadrado .container-cuadro .cuadro:hover .up-cuadro .lorem-ipsum {
+    display: block; /* Mostramos el lorem ipsum cuando el up-cuadro se alargue */
+}
+
 .cuadrado .container-cuadro .cuadro .up-cuadro img{
     width: 100px;
     height: 100px;
