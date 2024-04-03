@@ -19,16 +19,18 @@
     margin-right: 15px; 
 }
 
-.nav-menu-link {
-    text-decoration: none; 
-    color: black; 
-}
-.nav-menu-link:hover {
-    color: white;
-}
 .nav-list{
-    margin-left: 200px;
     cursor: pointer;
+}
+.nav-list a,
+.nav-menu-link {
+    text-decoration: none;
+    color: black !important;
+}
+
+.nav-list a:hover,
+.nav-menu-link:hover {
+    color: white !important;
 }
 .cabecera{
     display: block;
@@ -37,7 +39,16 @@
 .select-menu{
     background-color:  #1E6B93;
 }
+.navbar-nav .nav-item .nav-link,
+.navbar-nav .dropdown-menu .dropdown-item {
+    color: black !important;
+}
 
+/* Cambia el color a blanco al pasar el mouse */
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+    color: white !important;
+}
 a:hover{
     text-decoration: none;
 }
@@ -162,11 +173,6 @@ a:hover{
 
 .navbar{
     padding: 10px !important;
-}
-
-.logonegro{
-    position: absolute;
-    height: 80px;
 }
 
 .c1{
@@ -359,16 +365,13 @@ a:hover{
     background-color: rgb(108, 177, 30);
 }
 .logo-div1{
-    width: 50px;
+    width: auto;
     height: 50px;
-    border-radius: 100px;
-    background-color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
-.logo-div2{
+/*.logo-div2{
     width: 30px;
     height: 30px;
     border-radius: 100px;
@@ -376,11 +379,10 @@ a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-}
+}*/
 
 .logonegro{
-    width: 30px;
-    height: 30px;
+    height: 50px;
 }
 .caja1{
     width: 100%;
@@ -1460,13 +1462,16 @@ input[type="text"] {
     }
 
     .logo-div1{
-        width: 50px;
-        height: 50px;
+        width: 80%;
     }
-    .logo-div2{
+    .logonegro{
+        height: 28px;
+        padding-left: 15%;
+    }
+    /*.logo-div2{
         width: 30px;
         height: 30px;
-    }
+    }*/
  /*********************************MENSAJES DEBAJO DE LA TABLA DE MIEMBROS****************/
     .titulocentral h5{
         font-size: 13px;
