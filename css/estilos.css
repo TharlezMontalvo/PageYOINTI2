@@ -394,7 +394,7 @@ body{
     overflow: visible;
     border-style: solid;
     border-width: 1px;
-    background-color: #FFFFFF;
+    background-color: #DDDDDD;
     margin: 0 50px;
     display: inline-block;
     padding-top: 150px;
@@ -407,25 +407,32 @@ body{
     font-size: 14px;
 }
 .cuadrado .container-cuadro .cuadro .up-cuadro{
-    background-color: #000000;
+    background-color: #ffffff;
     position: absolute;
     transform: translate(-3%, -105%);
-    color: #FFFFFF;
+    color: #000000;
     text-align: left;
     height: 40%;
     width: 99%;
+    border: 1px solid #000000;
     border-radius: 8px;
     padding-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    transition: opacity 0.3s, transform 0.3s; 
+    transition: opacity 0.3s, transform 0.3s, height 0.3s, bottom 0.3s; 
+    overflow: hidden;
 }
 
   .cuadrado .container-cuadro .cuadro:hover .up-cuadro {
     height: 100%; /* Alargar el cuadro */
     transform: translateY(-37.2%); /* Mover hacia abajo */
+  }
+  .cuadrado .container-cuadro .cuadro:hover:not(:hover) .up-cuadro {
+    bottom: 100%; /* Mover el cuadro hacia arriba */
+    height: 0; /* Reducir la altura del cuadro */
+    opacity: 0; /* Ocultar el cuadro */
   }
 .cuadrado .container-cuadro .cuadro .up-cuadro img{
     width: 100px;
