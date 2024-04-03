@@ -137,7 +137,6 @@
     color: black !important;
 }
 
-/* Cambia el color a blanco al pasar el mouse */
 .navbar-nav .nav-item .nav-link:hover,
 .navbar-nav .dropdown-menu .dropdown-item:hover {
     color: white !important;
@@ -225,6 +224,13 @@ a:hover{
     width: 100%;
     height: 10%;
     margin: 1% 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-body{
+    display: flex;
+    width: 80%;
 }
 /******************************************SUBIR MANUAL DE USUARIO*******************************/
 .manual-container{
@@ -241,7 +247,7 @@ a:hover{
     justify-content: center;
     height: 80%;
     background-color: #E2E2E2;
-    width: 60%;
+    width: 70%;
     padding: 5%;
   }
 
@@ -299,7 +305,7 @@ a:hover{
     justify-content: center;
     height: 80%;
     background-color: #E2E2E2;
-    width: 80%;
+    width: 90%;
     padding: 2%;
   }
 
