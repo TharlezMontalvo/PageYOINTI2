@@ -33,6 +33,7 @@ body {
 .header .logo {
     cursor: pointer;
     margin-top: 1.5%;
+    margin-left: -2%;
 }
 
 .header .logo img {
@@ -88,9 +89,10 @@ body {
     }
 
     .header .logo img {
-        height: 30px;
+        height: 24px;
         width: auto;
         padding: 0 20px;
+        margin-top: 4%;
     }
 
     .nav-menu {
