@@ -140,6 +140,7 @@ body{
 .home .swiper-slide .content h3 {
     font-size: 40px !important;
     line-height:100% !important;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0) !important; 
 }
 @media(max-width:768px) {
     .home .swiper-slide .content h3 {
@@ -151,6 +152,9 @@ body{
 .home .home-slider .back1{
     transition: all .2s linear;
     background-image: url('../img/slide.jpg');
+    background-size: 100% 100%;/* Ajusta la imagen para que quepa completamente dentro del contenedor */
+    background-position: center; /* Centra la imagen dentro del contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
 .home .home-slider .back2{
     transition: all .2s linear;
@@ -203,7 +207,7 @@ body{
     font-size: 4rem;
     margin-left: 2rem;
     line-height: 1.5;
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8) !important; /* Ajustamos la sombra para que sea más pronunciada */
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0) !important; /* Ajustamos la sombra para que sea más pronunciada */
 }  
 
 @media(max-width: 768px){
