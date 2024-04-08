@@ -137,11 +137,9 @@ body{
     }
 }
 
-
-
 .home .swiper-slide .content h3 {
     font-size: 40px !important;
-    line-height:100% !important;    
+    line-height:100% !important;
 }
 @media(max-width:768px) {
     .home .swiper-slide .content h3 {
@@ -152,7 +150,7 @@ body{
 
 .home .home-slider .back1{
     transition: all .2s linear;
-    background-image: url('../img/slide1.jpg');
+    background-image: url('../img/slide.jpg');
 }
 .home .home-slider .back2{
     transition: all .2s linear;
@@ -205,7 +203,9 @@ body{
     font-size: 4rem;
     margin-left: 2rem;
     line-height: 1.5;
-}
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8) !important; /* Ajustamos la sombra para que sea más pronunciada */
+}  
+
 @media(max-width: 768px){
     .home .home-slider .slide .content h3{
         color:#FFFFFF;
